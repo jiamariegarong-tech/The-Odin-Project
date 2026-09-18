@@ -3,143 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Morgan | Frontend Developer</title>
+  <title>Landing Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="#" class="logo"><span class="logo-accent">&lt;/&gt;</span> Alex.dev</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact" class="btn btn-sm">Contact Me</a></li>
-    </ul>
-  </nav>
-
-  <header id="about" class="hero">
-    <div class="hero-content">
-      <div class="status-badge">
-        <span class="status-dot"></span> Open to new opportunities
-      </div>
-      <h1>Building high-performance, visual web experiences</h1>
-      <p>I'm a frontend developer specializing in responsive layouts, clean architecture, and modern interface design.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Explore Work</a>
-        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
-      </div>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Header Logo</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">header link one</a></li>
+          <li><a href="#">header link two</a></li>
+          <li><a href="#">header link three</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section id="projects" class="section">
-    <div class="section-header">
-      <h2>Selected Works</h2>
-      <p>A collection of recent projects built with modern CSS layout techniques.</p>
-    </div>
-
-    <div class="project-grid">
-
-      <article class="card">
-        <div class="card-image">
-          <div class="image-placeholder">Landing Page</div>
-        </div>
-        <div class="card-content">
-          <h3>Odin Landing Page</h3>
-          <p>A fully responsive flexbox-based landing page built according to strict layout specs.</p>
-          <div class="tags">
-            <span>HTML5</span>
-            <span>Flexbox</span>
-            <span>CSS Variables</span>
-          </div>
-          <a href="#" class="card-link">View Project &rarr;</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-image">
-          <div class="image-placeholder">Pricing Component</div>
-        </div>
-        <div class="card-content">
-          <h3>SaaS Pricing Grid</h3>
-          <p>Multi-tiered pricing table featuring highlighted recommended tiers and responsive scaling.</p>
-          <div class="tags">
-            <span>HTML5</span>
-            <span>CSS Grid</span>
-            <span>Responsive</span>
-          </div>
-          <a href="#" class="card-link">View Project &rarr;</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-image">
-          <div class="image-placeholder">Recipe Blog</div>
-        </div>
-        <div class="card-content">
-          <h3>Editorial Culinary Blog</h3>
-          <p>Content-first layout focusing on semantic typography, line heights, and custom media wrappers.</p>
-          <div class="tags">
-            <span>Typography</span>
-            <span>Semantic HTML</span>
-          </div>
-          <a href="#" class="card-link">View Project &rarr;</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="skills" class="section section-dark">
-    <div class="section-header">
-      <h2>Tech Stack</h2>
-      <p>Core tools and technologies I use daily.</p>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <span class="skill-icon">🎨</span>
-        <h4>HTML5 & CSS3</h4>
-        <p>Semantic markup & modern styling</p>
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1 class="hero-title">This website is awesome</h1>
+        <p class="hero-subtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+        <button class="btn">Sign up</button>
       </div>
-      <div class="skill-card">
-        <span class="skill-icon">📐</span>
-        <h4>Flexbox & Grid</h4>
-        <p>Complex, responsive web layouts</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">⚡</span>
-        <h4>JavaScript</h4>
-        <p>Dynamic DOM interaction</p>
-      </div>
-      <div class="skill-card">
-        <span class="skill-icon">📦</span>
-        <h4>Git & GitHub</h4>
-        <p>Version control & workflow</p>
+      <div class="hero-image-placeholder">
+        this is a placeholder for an image
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="contact-card">
-      <div class="contact-text">
-        <h2>Start a Project</h2>
-        <p>Got an idea or looking for a developer to join your team? Reach out and let's discuss details.</p>
-      </div>
-      
-      <form class="contact-form" onsubmit="event.preventDefault();">
-        <div class="input-row">
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
+  <section class="info-section">
+    <div class="container">
+      <h2 class="info-header">Some random information.</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="square"></div>
+          <p class="card-text">this is some subtext under an illustration or image</p>
         </div>
-        <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
-        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-      </form>
+        <div class="card">
+          <div class="square"></div>
+          <p class="card-text">this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card">
+          <div class="square"></div>
+          <p class="card-text">this is some subtext under an illustration or image</p>
+        </div>
+        <div class="card">
+          <div class="square"></div>
+          <p class="card-text">this is some subtext under an illustration or image</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="container quote-container">
+      <blockquote class="quote-text">
+        This is an inspiring quote, or a quote from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is it looks nice.
+      </blockquote>
+      <p class="quote-author">-Thor, God of Thunder</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h3>Call to action! It's time!</h3>
+          <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+        <button class="btn btn-outline">Sign up</button>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2026 Alex Morgan. Built with HTML5 & Modern CSS.</p>
+    <div class="container">
+      <p>Copyright © The Odin Project 2026</p>
+    </div>
   </footer>
 
 </body>
