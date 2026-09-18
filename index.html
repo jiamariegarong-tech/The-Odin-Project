@@ -3,76 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Alex Morgan | Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero-section">
-    <nav class="navbar">
-      <div class="logo">Header Logo</div>
-      <ul class="nav-links">
-        <li><a href="#">header link one</a></li>
-        <li><a href="#">header link two</a></li>
-        <li><a href="#">header link three</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">Alex Morgan</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+    </ul>
+  </nav>
 
+  <header id="about" class="hero">
     <div class="hero-content">
-      <div class="hero-text">
-        <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-        <button class="btn">Sign up</button>
-      </div>
-      <div class="hero-image">
-        this is a placeholder for an image
+      <span class="badge">Available for projects</span>
+      <h1>Front-End Developer & UI Explorer</h1>
+      <p>I build clean, responsive, and accessible web experiences using modern HTML, CSS, and JavaScript.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
       </div>
     </div>
   </header>
 
-  <section class="info-section">
-    <h2>Some random information.</h2>
-    <div class="card-container">
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="project-grid">
+
       <div class="card">
-        <div class="square"></div>
-        <p>this is some subtext under an illustration or image</p>
+        <div class="card-preview">Project Preview</div>
+        <div class="card-body">
+          <h3>Landing Page Clone</h3>
+          <p>A responsive landing page built using Flexbox, CSS Grid, and custom styling rules.</p>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Flexbox</span>
+          </div>
+        </div>
       </div>
+
       <div class="card">
-        <div class="square"></div>
-        <p>this is some subtext under an illustration or image</p>
+        <div class="card-preview">Project Preview</div>
+        <div class="card-body">
+          <h3>Recipe & Article Blog</h3>
+          <p>A structured blog layout focusing on typography hierarchy, readable line lengths, and semantic tags.</p>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS Grid</span>
+          </div>
+        </div>
       </div>
+
       <div class="card">
-        <div class="square"></div>
-        <p>this is some subtext under an illustration or image</p>
+        <div class="card-preview">Project Preview</div>
+        <div class="card-body">
+          <h3>Pricing Calculator</h3>
+          <p>An interactive product pricing component featuring distinct tier cards and toggle controls.</p>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="square"></div>
-        <p>this is some subtext under an illustration or image</p>
-      </div>
+
     </div>
   </section>
 
-  <section class="quote-section">
-    <div class="quote-container">
-      <blockquote class="quote">
-        This is an inspiring quote, or a quote from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is it looks nice.
-      </blockquote>
-      <p class="author">-Thor, God of Thunder</p>
+  <section id="skills" class="section section-alt">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-chip">HTML5</div>
+      <div class="skill-chip">CSS3</div>
+      <div class="skill-chip">Flexbox</div>
+      <div class="skill-chip">CSS Grid</div>
+      <div class="skill-chip">JavaScript (ES6+)</div>
+      <div class="skill-chip">Git & GitHub</div>
+      <div class="skill-chip">Responsive Design</div>
     </div>
   </section>
 
-  <section class="cta-section">
-    <div class="cta-banner">
-      <div class="cta-text">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for our product by clicking that button right over there!</p>
-      </div>
-      <button class="btn btn-border">Sign up</button>
+  <section id="contact" class="section">
+    <div class="contact-box">
+      <h2>Let's Work Together</h2>
+      <p>Have a project in mind or want to collaborate? Send me a message!</p>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-full">Send Message</button>
+      </form>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Copyright © The Odin Project 2026</p>
+    <p>© 2026 Alex Morgan. Built with HTML & CSS.</p>
   </footer>
 
 </body>
